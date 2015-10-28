@@ -1,0 +1,48 @@
+<!-- 该底部导航是包含iocn和文本的， 使用默认的蓝色背景样式
+每一个tab的子标签 ion-nav-view 指令都将有自己的浏览器历史来进行相关的跳转 -->
+
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+
+
+<ion-tabs class="tabs-icon-top tabs-color-light  tabs-positive">
+	
+	<ion-tab 
+		title="分类" 
+		icon-off="ion-ios-pulse" 
+		icon-on="ion-ios-pulse-strong" 
+		href="#/tab/classify">
+		<ion-nav-view 
+			name="tab-classify"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab 
+		title="主播/客人" 
+		icon-off="ion-ios-chatboxes-outline" 
+		icon-on="ion-ios-chatboxes" 
+		href="#/tab/resultList">
+		<ion-nav-view 
+			name="tab-result-list"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab 
+		title="搜索" 
+		icon-off="ion-ios-search" 
+		icon-on="ion-ios-search-strong" 
+		href="#/tab/search">
+		<ion-nav-view 
+			name="tab-search"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab 
+		title="设置" 
+		icon-off="ion-ios-settings" 
+		icon-on="ion-ios-settings-strong" 
+		href="#/tab/setting">
+		<ion-nav-view 
+			name="tab-setting"></ion-nav-view>
+	</ion-tab>
+</ion-tabs>
