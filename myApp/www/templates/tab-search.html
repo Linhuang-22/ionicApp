@@ -1,10 +1,12 @@
 <ion-view view-title="搜索">
   <ion-content>
-    <ion-list>
+    <ion-list
+    	  
+    	>
     	<ion-item 
-    		class="item-remove-animate item-avatar item-icon-right"
+    		class="item-remove-animate"
     		type="item-text-warp"
-    		href="">
+    		href="" >
     		<img src="img/ionic.png">
     		<h2>小苍的直播间</h2>
     		<p class="smoll-font">欢迎光临我的直播间<span>asdasd</span></p>
@@ -13,7 +15,65 @@
     			class="button-assertive">
     			delete
     		</ion-option-button>
+    		<ion-option-button 
+    			class="button-positive">
+    			视频
+    		</ion-option-button>
+
+    		<ion-delete-button class="ion-minus-circled"
+		                       ng-click="items.splice($index, 1)">
+		    </ion-delete-button>
+
+		    <ion-reorder-button class="ion-navicon"
+	                            on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+	        </ion-reorder-button>
     	</ion-item>
+
+    	<ion-item 
+    		class="item-remove-animate"
+    		type="item-text-warp"
+    		href="" >
+    		<img src="img/ionic.png">
+    		<h2>小苍的直播间</h2>
+    		<p class="smoll-font">欢迎光临我的直播间<span>asdasd</span></p>
+
+    		<ion-option-button 
+    			class="button-assertive">
+    			delete
+    		</ion-option-button>
+    		<ion-option-button 
+    			class="button-positive">
+    			视频
+    		</ion-option-button>
+    		<ion-delete-button class="ion-minus-circled"
+		                       ng-click="items.splice($index, 1)">
+		    </ion-delete-button>
+    	</ion-item>
+
+    	<ion-item class="item-divider item-remove-animate" style="padding:0 !important;">
+    		we can't stop
+    		<ion-option-button 
+    			class="button-assertive">
+    			delete
+    		</ion-option-button>
+    		<ion-option-button 
+    			class="button-positive">
+    			视频
+    		</ion-option-button>
+    	</ion-item>
+
+    	<div class="item item-divider">
+    	    Candy Bars
+    	  </div>
+    	<a class="item" href="#">
+    Butterfinger
+  </a><a class="item" href="#">
+    Butterfinger
+  </a><a class="item" href="#">
+    Butterfinger
+  </a><a class="item" href="#">
+    Butterfinger
+  </a>
     </ion-list>
   </ion-content>
 </ion-view>
