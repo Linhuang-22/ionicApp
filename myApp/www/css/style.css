@@ -2,4 +2,105 @@
 
 .smoll-font{
 	font-size: 8px !important;
+	line-height: 1.2em;
+}
+.smoll-font .star{
+	color: #387ef5;
+}
+.smoll-font .star+.star{
+	margin-left: -3px;
+}
+.money{
+	text-align: right;
+}
+.money span{
+	background: #886aea;
+	color: #fff !important;
+	border-radius: 5px;
+	padding: 0px 5px;
+}
+.search-list.item-avatar h2{
+	font-size: .905em ;
+
+}
+.search-list .item-content{
+	padding-right: 10px;
+}
+.search-list .item-content .no-break{
+	white-space:normal;
+}
+.no-padding{
+	padding: 0;
+}
+.item-thumbnail-left img:first-child{
+	border-radius: 5px;
+}
+.extra{
+	margin-top: 5px;
+	padding: 0;
+	border-top: solid 1px #eee;
+}
+.extra p{
+	white-space:normal;
+	font-size: 8px;
+	margin-top: 3px;
+	line-height: 1.2;
+}
+.recommed-list{
+	text-align: center;
+	color: #666;
+/*	background-color: #fafafa;
+*/}
+.recommend{
+	font-size: 30px;
+}
+.peo-list{
+	margin: 5px;
+	padding: 5px;
+	background-color: #fDfDfD;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.15)
+}
+.peo-list h5{
+	text-align: center;
+	margin: 0 0;
+	color: #666;
+}
+.peo-list img{
+	width: 100%;
+}
+.search-history{}
+.search-history .item,.search-history .item i{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.05em !important;
+}
+.user{
+	padding: 5px 0px 5px 84px;
+	position: relative;
+		min-height: 74px;
+}
+.user img{
+	position: absolute;
+
+	top: 5px;
+	left: 10px;
+	 width: 64px;
+	 border-radius: 100%;
+}
+.user .button{
+	font-size: 10px;
+	line-height: 1.5;
+	min-height: 15px !important;
+	height: 25px !important;
+	padding: 2px 5px;
+}
+.user .ion-ios-arrow-right{
+	color: #666;
+	font-size: 30px;
+	position: absolute;
+	right: 10px;top: 50%;
+	margin-top: -15px;
+}
+.user h5{
+	margin-top: 0;
 }

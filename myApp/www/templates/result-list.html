@@ -1,9 +1,141 @@
 <ion-view view-title="搜索历史">
-  <ion-content>
+	<div class="bar bar-subheader">
+	  <div class="button-bar second-search">
+	      <a class="button button-outline button-positive active">热度</a>
+	      <a class="button button-outline button-positive">时间</a>
+	      <a class="button button-outline button-positive">等级</a>
+	      <a class="button button-outline button-positive">价格</a>
+	  </div>
+	</div>
+  <ion-content class="has-subheader">
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+    	<ion-item 
+    		class="item-remove-animate item-avatar search-list"
+    		type="item-text-warp"
+    		href="" >
+    		<img src="img/9SgAuHeY.png">
+            <h2>十二道锋味</h2>
+    		<!-- 内容区开始 -->
+            <p class="smoll-font">
+                <span>80:00-13:59 | 06/37- 02/29</span>
+            </p>
+            <div class="row no-padding">
+                <p class="smoll-font col-75">
+                    <span class="star ion-ios-star posotive"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star-half"></span>
+                    <span class="star ion-ios-star-outline"></span>
+                    <span>(500) | 任何人</span>
+                </p>
+                <p class="smoll-font  col-25 money" >
+                    <span>￥50</span>
+                </p>
+            </div>
+            <div class="extra ">
+                <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+            </div>  
+            <!-- 内容区结束 -->
+
+    		<ion-option-button 
+    			class="button-assertive">
+    			delete
+    		</ion-option-button>
+    		<ion-option-button 
+    			class="button-positive">
+    			视频
+    		</ion-option-button>
+
+    		<ion-delete-button class="ion-minus-circled"
+		                       ng-click="items.splice($index, 1)">
+		    </ion-delete-button>
+
+		    <ion-reorder-button class="ion-navicon"
+	                            on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+	        </ion-reorder-button>
+    	</ion-item>
+
+    	<ion-item 
+    		class="item-remove-animate item-thumbnail-left search-list"
+    		type="item-text-warp"
+    		href="" >
+    		<img src="img/9SgAuHeY.png">
+    		<!-- 内容区开始 -->
+            <h2 class="no-break">小苍的直播间</h2>
+            <p class="smoll-font">
+                <span>80:00-13:59 | 06/37- 02/29</span>
+            </p>
+            <div class="row no-padding">
+                <p class="smoll-font col-75">
+                    <span class="star ion-ios-star posotive"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star-half"></span>
+                    <span class="star ion-ios-star-outline"></span>
+                    <span>(500) | 任何人</span>
+                </p>
+                <p class="smoll-font  col-25 money" >
+                    <span>￥50</span>
+                </p>
+            </div>
+            <div class="extra ">
+                <p>视屏内容 分类 介绍 2行，最多30个字,文字位置自动适应</p>
+            </div>  
+            <!-- 内容区结束 -->
+
+    		<ion-option-button 
+    			class="button-assertive">
+    			delete
+    		</ion-option-button>
+    		<ion-option-button 
+    			class="button-positive">
+    			视频
+    		</ion-option-button>
+    		<ion-delete-button class="ion-minus-circled"
+		                       ng-click="items.splice($index, 1)">
+		    </ion-delete-button>
+    	</ion-item>
+
+        <ion-item 
+            class="item-remove-animate item-thumbnail-left search-list"
+            type="item-text-warp"
+            href="" >
+            <img src="img/logo.jpg">
+            <!-- 内容区开始 -->
+            <h2 class="no-break">十二道锋味</h2>
+            <p class="smoll-font">
+                <span>80:00-13:59 | 06/37- 02/29</span>
+            </p>
+            <div class="row no-padding">
+                <p class="smoll-font col-75">
+                    <span class="star ion-ios-star posotive"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star"></span>
+                    <span class="star ion-ios-star-half"></span>
+                    <span class="star ion-ios-star-outline"></span>
+                    <span>(500) | <span class="assertive">任何人</span></span>
+                </p>
+                <p class="smoll-font  col-25 money" >
+                    <span>￥50</span>
+                </p>
+            </div>
+            <div class="extra ">
+                <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+            </div>  
+            <!-- 内容区结束 -->
+
+            <ion-option-button 
+                class="button-assertive">
+                delete
+            </ion-option-button>
+            <ion-option-button 
+                class="button-positive">
+                视频
+            </ion-option-button>
+            <ion-delete-button class="ion-minus-circled"
+                               ng-click="items.splice($index, 1)">
+            </ion-delete-button>
+        </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>

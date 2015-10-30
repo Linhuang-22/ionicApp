@@ -1,9 +1,57 @@
 <ion-view view-title="设置">
   <ion-content>
+  	<div class="list card">
+
+  	  <div class="user">
+  	  	<img src="img/d058ccbf6c81800aa28d4c7fb13533fa828b4753.jpg">
+  	  	<div class="row">
+  	  		<div class="col-70">
+  	  			<h5>彭于晏</h5>
+  	  			<a class="button button-positive">尚未登录</a>
+  	  		</div>
+  	  		<div class="col-30" style="text-align:right">
+  	  			<span class="ion-ios-arrow-right"></span>
+  	  		</div>
+  	  	</div>
+  	  </div>
+
+  	  <a href="#" class="item item-icon-left item-icon-right">
+  	    <i class="icon ion-ios-heart-outline"></i>
+  	    我的订阅
+        <i class="icon ion-ios-arrow-right"></i>
+  	  </a>
+
+  	  <a href="#" class="item item-icon-left item-icon-right">
+  	    <i class="icon ion-ios-gear-outline"></i>
+  	    设置
+        <i class="icon ion-ios-arrow-right"></i>
+  	  </a>
+
+  	  <a href="#" class="item item-icon-left item-icon-right">
+  	    <i class="icon ion-ios-cloud-download-outline"></i>
+  	    我的下载
+        <i class="icon ion-ios-arrow-right"></i>
+  	  </a>
+
+  	</div>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+	    <ion-toggle class="toggle-positive"  ng-model="settings.enableFriends">
+	        非wifi情况下关闭
+	    </ion-toggle>
+	    <ion-toggle  ng-model="settings.a2">
+	        开启视频缓冲
+	    </ion-toggle>
+	    <div class="item item-toggle">
+	         静音
+	         <label class="toggle toggle-positive">
+	           <input type="checkbox">
+	           <div class="track">
+	             <div class="handle"></div>
+	           </div>
+	         </label>
+	      </div>
     </ion-list>
+
+    
   </ion-content>
 </ion-view>
