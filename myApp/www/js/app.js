@@ -36,8 +36,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   $ionicConfigProvider.platform.android.navBar.alignTitle('left');
 
   // 返回按钮的iocn样式设置，默认没有文字
-  $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
-  $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');        
+  $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-left');
+  $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-ios-arrow-back');        
 
   // 对视图切换动画的设置
   $ionicConfigProvider.platform.ios.views.transition('ios'); 
@@ -75,6 +75,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('tab.classifyd', {  // 状态名写为tab.***表示改状态是tab的子页面,而且页面的url前也会有tab
+    url: '/classify/:id',
+    views: {
+      'tab-classify': {  // 对应后面tab子元素ion-nav-view的name
+        templateUrl: 'templates/detail.html',
+        controller: 'detailCtrl'
+      }
+    }
+  })
+
   // 主播/客人tab（搜索列表页）  //这里可能还需要传入搜索的条件语句
   .state('tab.result-list', {
     url: '/resultList',
@@ -82,6 +92,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       'tab-result-list': {
         templateUrl: 'templates/result-list.html',
         controller: 'resultListCtrl'
+      }
+    }
+  })
+  .state('tab.detail', {
+    url: '/resultList/:id',
+    views: {
+      'tab-result-list': {
+        templateUrl: 'templates/detail.html',
+        controller: 'detailCtrl'
       }
     }
   })
@@ -107,9 +126,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  
 
   //如果地址不是以上地址的话就跳转到该地址
   $urlRouterProvider.otherwise('/tab/classify');
 
 
 })
+

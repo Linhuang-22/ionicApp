@@ -104,3 +104,175 @@
 .user h5{
 	margin-top: 0;
 }
+
+
+
+.speak{
+	bottom: 49px;
+	height: 50px;
+	padding: 0;
+
+
+}
+.speak .row{
+	padding:8px 0px;
+	background: #e6e6e6;
+}
+.speak span{
+	padding: 0 6px;
+	line-height: 34px;
+	text-align: center;
+	white-space:nowrap;
+}
+.speak input[type="text"]{
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	padding:5px 5px;
+	line-height: 22px;
+	height: 34px;
+	overflow: scroll;
+	font-family: "微软雅黑";
+/*	line-height: 1.5em;*/
+}
+
+.viedo-position{
+	width: 100%;
+	min-height: 60%;
+	background: #111;
+}
+.positon-reletive{
+	position: relative;
+}
+
+.video-bg{
+	position: absolute;
+	top: 43px;
+
+}
+.second-search2{
+	position: absolute;
+	top: 215px;
+}
+.assesment{
+
+
+	position: relative;
+	margin-top: 10px;
+}
+.assesment>img:first-child{
+	position: absolute;
+/*	left: 10px;*/
+	top: 5px;
+	width: 45px;
+	border-radius: 100%;
+}
+.assesment p:after,.assesment p:before{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: solid 8px transparent;
+
+	position: absolute;
+	top: 10px;
+/*	left: -15px;*/
+
+}
+.assesment p:before{
+/*	left: -16px;*/
+
+}
+.assesment p{
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+	margin: 0;
+	border: solid 1px #DBDBDB;
+/*	min-height: 55px;*/
+/*	background-color: #ccc;*/
+	max-width: 85%;
+	margin-left: 5px;
+	box-shadow:  1px 1px 3px rgba(0,0,0,.1);
+	border-radius: 5px;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#f2f2f2');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#f2f2f2')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -ms-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(top, #ffffff, #f2f2f2);
+	/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/
+}
+.other{
+	text-align: left;
+	padding: 5px 0 5px 65px;
+}
+.other>img:first-child{
+	left: 10px;
+}
+.other p:after,.other p:before{
+	border-right-color: #FAFAFA;
+	left: -15px;
+}
+.other p:before{
+	border-right-color: #CACACA;
+	left: -16px;
+}
+
+.me{
+	text-align: right;
+	padding: 5px 65px 5px 0;
+}
+.me>img:first-child{
+	right: 10px;
+}
+.me p:after,.me p:before{
+	border-left-color: #FAFAFA;
+
+	right: -15px;
+}
+.me p:before{
+	border-left-color: #CACACA;
+	right: -16px;
+}
+
+.row .button.label-btn{
+	padding: 2px;
+	min-height: 20px;
+	font-size: 12px;
+	line-height: 1.5;
+	margin-right: 5px;
+}
+
+
+.action-time span,.finish-time span{
+	display: block;
+}
+.gang{
+	padding: 10px 15px 0;
+}
+
+
+.zhuboxinxi{
+	margin-top: 10px;
+	position: relative;
+	padding-left: 150px;
+	min-height: 120px;
+}
+.zhuboxinxi>img:first-child{
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.left-2{
+	padding-left: 10px;
+}

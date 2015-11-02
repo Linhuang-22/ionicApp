@@ -1,0 +1,90 @@
+<ion-view view-title="聊天室详情">
+	<div class="video-bg">
+		<video width="100%" contorls autobuffer src="oceans-clip.mp4">
+			<source src="oceans-clip.mp4"></source>
+		</video>
+	</div>
+
+	<div class="button-bar second-search2" id="search2">
+        <a ng-click="tab1 = true; tab2= false; tab3= false;" ng-class="{active:tab1 == true}" class="button button-outline button-positive">聊天</a>
+        <a ng-click="tab2 = true; tab1= false; tab3= false;" ng-class="{active:tab2 == true}" class="button button-outline button-positive">聊天室信息</a>
+        <a ng-click="tab3 = true; tab2= false; tab1= false;" ng-class="{active:tab3 == true}" class="button button-outline button-positive">主播信息</a>
+    </div>
+	<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>
+	
+
+  <ion-content style="top:262px;bottom:97px;">
+    <div ng-if="tab1">
+    	<div class="other assesment">
+    		<img src="img/chat-logo.jpg">
+    		<p>我将会成为你的光,你的火源,你燃烧的太阳，我会是你前进路上的白天黑夜；</p>
+    	</div>
+    	<div class="assesment me">
+    		<img src="img/chat-logo.jpg">
+    		<p>I'm dare you come,I'm dare you belong</p>
+    	</div>
+    </div>
+    <div ng-if="tab2">
+    	<div class="row">
+    		<h2>聊天室名称</h2>
+    	</div>
+    	<div class="row">
+    		<a class="button button-positive label-btn">具体标签</a>
+    		<a class="button button-positive label-btn">具体标签</a>
+    		<a class="button button-positive label-btn">具体标签</a>
+    		<a class="button button-positive label-btn">具体标签</a>
+    		<a class="button button-positive label-btn">具体标签</a>
+    	</div>
+    	<div class=" row">
+            <p class="action-time positive">08:00<span>12/15/16</span></p>
+            <p class="gang">-</p>
+            <p class="finish-time positive">08:00<span>12/15/16</span></p>
+            <div class="col money">
+                <p ng-bind="50 | currency:'￥'"></p>
+            </div>
+            <div class="col people">
+                <p>任何人</p>
+            </div>
+        </div>
+    	<div class="row">
+            <p>视频内容等等等等</p>
+        </div>
+        
+    </div>
+    <div ng-if="tab3">
+    	<div class=" zhuboxinxi">
+    		<img class="col-50 touxiang" ng-src="https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png">
+    		<ul class="">
+    			<li>
+    				<span style="line-height:38px;">关注</span>
+    				<label class="checkbox" style="vertical-align:bottom; padding:5px">
+				       <input type="checkbox">
+				     </label>
+    				     
+    			</li>
+    			<li>昵称</li>
+    			<li>男</li>
+    			<li>年龄</li>
+    			<li>等公开信息</li>
+    		</ul>
+    	</div>
+    	<p class="left-2">证书或证件验证<i class="yanzheng ion-checkmark-round"></i></p>
+    	<p class="left-2">上传图片的认证点击可看<i class="yanzheng ion-checkmark-round"></i></p>
+    	<p class="left-2">个人资料中写了，但未经认证的<i class="yanzheng ion-help"></i></p>
+    	<div class="row">
+    		<button class="col button-positive button">加好友</button>
+    		<button class="col button-positive button">发消息</button>
+    		<button class="col button-positive button">视频</button>
+    	</div>
+    </div>
+  </ion-content>
+  <div class="bar bar-subfooter speak">
+    
+    <label class="row ">
+      <span class="col icon ion-mic-a"></span>
+      <input type="text" class="col-80" placeholder="Comments">
+      <span class="col icon ion-ios-videocam"></span>
+    </label>
+    
+  </div>
+</ion-view>
